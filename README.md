@@ -3,6 +3,7 @@
 ## Configuration sets
 
 1. testops-demo
+   1. cannot be used for the production deploy
 2. testops
 3. testops-ldap
 4. testops-saml
@@ -75,7 +76,7 @@ Use this configuration if you are going to manage end users and their authentica
 
 The only available paths from to upgrade 4 to 5 are
 
-- 4.25.1 → 5.3.3
-- 4.26.1 → 5.3.3
+- 4.25.1 → 5.3.3, then to next available version
+- 4.26.1 → 5.3.3 then to next available version
 
-Upgrade process is thoroughly described in [TestOps documentation here.](https://)
+Upgrade process is thoroughly described in [TestOps documentation here.](https://docs.qameta.io/allure-testops/migrations/to-5/)
