@@ -291,6 +291,7 @@ TESTOPS_OPENID_AUTHORIZATIONURI=http://<open_id_provider_url>/somepath/openid-co
 TESTOPS_OPENID_JWKSETURI=http://<open_id_provider_url>/somepath/keys
 TESTOPS_OPENID_TOKENURI=http://<open_id_provider_url>/somepath/token
 
+
 # optional parameters commented in docker-compose.yml
 # uncomment these in docker-compose.yml if you know what you are doing and really need using these for the integration with IdP
 # TESTOPS_OPENID_ISSUERURI=http://<open_id_provider_url>/realms/<you_realm>
@@ -310,6 +311,14 @@ TESTOPS_OPENID_SYNCROLES=false
 TESTOPS_OPENID_GROUPROLEATTRIBUTE=group
 TESTOPS_OPENID_GROUPAUTHORITIES_ROLEUSERGROUPS=roleUserGroups
 TESTOPS_OPENID_GROUPAUTHORITIES_ROLEADMINGROUPS=roleAdminGroups
+
+########################################################################################
+# USE_OPENID_REFRESH_TOKEN defined if the refresh token should be used for the user session
+# if true, the user session will be managed by the OpenID provider's parameters
+# if false, the user session will be managed by the TestOps instance based on the value of INACTIVE_USER_SESSION_EXPIRATION
+# if absent, then deemed as true
+########################################################################################
+USE_OPENID_REFRESH_TOKEN=true
 
 ########################################################################################
 # INACTIVE_USER_SESSION_EXPIRATION defined the period of time after that the user session 
