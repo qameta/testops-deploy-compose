@@ -19,7 +19,7 @@ services:
     environment:
       # Not required for DEMO installation
       # TLS_ENDPOINTS: ${TLS_ENDPOINTS}
-      SPRING_PROFILES_ACTIVE: compose
+      SPRING_PROFILES_ACTIVE: compose,rabbitmq
       SPRING_CLOUD_CONSUL_ENABLED: "false"
       SPRING_OUTPUT_ANSI_ENABLED: never
       ALLURE_JWT_SECRET: ${DEMO_INSTANCE_JWT_SECRET}
