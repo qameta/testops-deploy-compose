@@ -27,6 +27,9 @@ services:
       ALLURE_ENDPOINT: ${TESTOPS_PROTO}://${TESTOPS_INSTANCE_URL}
       ALLURE_CRYPTO_PASSWORD: ${TESTOPS_CRYPTO_PASSWORD}
 
+      # Export for TMS integrations
+      ALLURE_SCHEDULER_INTEGRATION_EXPORT: "0 */5 * * * ?"
+
       # legacy parameters for users registration, leave as they are defined
       ALLURE_REGISTRATION_AUTOAPPROVE: false
       ALLURE_REGISTRATION_ENABLED: false

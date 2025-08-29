@@ -5,7 +5,7 @@
 
 # Update this to install different release – check the release notes
 
-RELEASE_TO_DEPLOY=5.11.3
+RELEASE_TO_DEPLOY=25.3.2
 
 ########################################################################################
 # Registry Settings
@@ -14,8 +14,8 @@ RELEASE_TO_DEPLOY=5.11.3
 # You need to provide the registry url, e.g. docker.io and the repo name, both are described in the docs.
 ########################################################################################
 
-IMAGES_REGISTRY=<correct registry here>
-IMAGES_REPO=<correct repo name accordingly to the docs>
+IMAGES_REGISTRY=docker.io
+IMAGES_REPO=allure
 
 ########################################################################################
 # FIRST_ADMIN_EMAIL
@@ -76,7 +76,7 @@ TESTOPS_JWT_SECRET=123456789ABCDEF
 # TESTOPS_CRYPTO_PASSWORD 
 # Parameter is used for the encryption of the sensitive data in the database. Users' passwords,
 # Integrations' secrets are encrypted using this password
-# Update this parameter once before the deployment and do not change it. Keep it in a safe place.
+# Update this parameter once before the deployment and DO NOT CHANGE OR LOSE IT. Keep it in a safe place.
 ########################################################################################
 TESTOPS_CRYPTO_PASSWORD=aHR0cHM6Ly9oZWxwLnFhbWV0YS5pbw==
 
