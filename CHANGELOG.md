@@ -4,3 +4,5 @@
 - adds this CHANGELOG.md
 - adds hardcoded 5 minutes sync interval ALLURE_SCHEDULER_INTEGRATION_EXPORT to all configs
 - adds ALLURE_LOGIN_OPENID_REFRESHTOKEN for OpenID configuration to define the side controlling user sessions
+  - **testops-openid** folder
+  - env file example, parameter: USE_OPENID_REFRESH_TOKEN
