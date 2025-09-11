@@ -131,7 +131,7 @@ services:
 
   redis:
     restart: always
-    image: bitnami/redis:6.2
+    image: bitnamilegacy/redis:6.2
     container_name: redis
     networks:
       - testops-net
@@ -159,7 +159,7 @@ services:
 
   minio-local:
     restart: always
-    image: bitnami/minio:2022
+    image: bitnamilegacy/minio:2022
     container_name: minio-local
     networks:
       - testops-net
