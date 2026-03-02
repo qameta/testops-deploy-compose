@@ -167,7 +167,7 @@ DEMO_INSTANCE_S3_PATHSTYLE=true
 ########################################################################################
 DEMO_INSTANCE_S3_MAXCONCURRENCY=200
 DEMO_INSTANCE_SCHEDULER_CLEANER_BLOB_BATCHSIZE=1000
-DEMO_INSTANCE_TASKEXECUTOR_COREPOOLSIZE=200
+DEMO_INSTANCE_TASKEXECUTOR_COREPOOLSIZE=50
 
 ########################################################################################
 # INACTIVE_USER_SESSION_EXPIRATION defined the period of time after that the user session 
