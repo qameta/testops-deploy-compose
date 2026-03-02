@@ -244,9 +244,9 @@ TESTOPS_S3_PATHSTYLE=true
 # do not change these parameters without consulting with the support
 # Alterations of these parameters make sense only for the production deployment.
 ########################################################################################
-TESTOPS_S3_MAXCONCURRENCY=200
+TESTOPS_S3_MAXCONCURRENCY=100
 TESTOPS_SCHEDULER_CLEANER_BLOB_BATCHSIZE=2000
-TESTOPS_TASKEXECUTOR_COREPOOLSIZE=200
+TESTOPS_TASKEXECUTOR_COREPOOLSIZE=50
 
 ########################################################################################
 # Integration with SMTP server is required for inviting new local users to TestOps

@@ -1,4 +1,12 @@
-# 2025-08-28
+# CHANGELOG
+
+## 2026-03-01
+
+- Starting from 26.1.1 max value accepted `TESTOPS_TASKEXECUTOR_COREPOOLSIZE` is 50.
+- decreased default value for S3_MAXCONCURRENCY down to 100.
+
+
+## 2025-08-28
 
 - Updates env files with registry and repo names
 - adds this CHANGELOG.md
