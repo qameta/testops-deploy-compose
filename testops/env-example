@@ -246,7 +246,7 @@ TESTOPS_S3_PATHSTYLE=true
 ########################################################################################
 TESTOPS_S3_MAXCONCURRENCY=200
 TESTOPS_SCHEDULER_CLEANER_BLOB_BATCHSIZE=2000
-TESTOPS_TASKEXECUTOR_COREPOOLSIZE=200
+TESTOPS_TASKEXECUTOR_COREPOOLSIZE=50
 
 ########################################################################################
 # INACTIVE_USER_SESSION_EXPIRATION defined the period of time after that the user session 

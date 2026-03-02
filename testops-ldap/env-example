@@ -230,7 +230,7 @@ TESTOPS_S3_PATHSTYLE=true
 ########################################################################################
 TESTOPS_S3_MAXCONCURRENCY=200
 TESTOPS_SCHEDULER_CLEANER_BLOB_BATCHSIZE=2000
-TESTOPS_TASKEXECUTOR_COREPOOLSIZE=200
+TESTOPS_TASKEXECUTOR_COREPOOLSIZE=50
 
 ########################################################################################
 # Integration with SMTP server is required for inviting new local users to TestOps
