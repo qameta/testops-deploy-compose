@@ -165,7 +165,7 @@ DEMO_INSTANCE_S3_PATHSTYLE=true
 # do not change these parameters without consulting to the support
 # Alterations of these parameters make sense only for the production deployment.
 ########################################################################################
-DEMO_INSTANCE_S3_MAXCONCURRENCY=200
+DEMO_INSTANCE_S3_MAXCONCURRENCY=100
 DEMO_INSTANCE_SCHEDULER_CLEANER_BLOB_BATCHSIZE=1000
 DEMO_INSTANCE_TASKEXECUTOR_COREPOOLSIZE=50
 
