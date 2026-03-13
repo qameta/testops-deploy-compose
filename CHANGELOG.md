@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2026-03-13
+
+- More precise thread pool configuration.
+- rollback default value for S3_MAXCONCURRENCY to 200.
+
 ## 2026-03-01
 
 - Starting from 26.1.1 max value accepted `TESTOPS_TASKEXECUTOR_COREPOOLSIZE` is 50.

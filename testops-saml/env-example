@@ -53,7 +53,7 @@ TESTOPS_PROTO=http
 TESTOPS_SECURE_COOKIE=false
 
 ########################################################################################
-# Time zone of the instance. 
+# Time zone of the instance.
 # Update this parameter. It's important for interactions with other systems.
 # Check TZ Identifier column https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 ########################################################################################
@@ -73,7 +73,7 @@ TESTOPS_SESSION_DURATION=57600
 TESTOPS_JWT_SECRET=123456789ABCDEF
 
 ########################################################################################
-# TESTOPS_CRYPTO_PASSWORD 
+# TESTOPS_CRYPTO_PASSWORD
 # Parameter is used for the encryption of the sensitive data in the database. Users' passwords,
 # Integrations' secrets are encrypted using this password
 # Update this parameter once before the deployment and DO NOT CHANGE OR LOSE IT. Keep it in a safe place.
@@ -244,12 +244,17 @@ TESTOPS_S3_PATHSTYLE=true
 # do not change these parameters without consulting with the support
 # Alterations of these parameters make sense only for the production deployment.
 ########################################################################################
-TESTOPS_S3_MAXCONCURRENCY=100
+TESTOPS_S3_MAXCONCURRENCY=200
+TESTOPS_S3_TASKEXECUTOR_COREPOOLSIZE=200
+TESTOPS_S3_TASKEXECUTOR_MAXPOOLSIZE=200
+TESTOPS_S3_TASKEXECUTOR_QUEUECAPACITY=1000000
 TESTOPS_SCHEDULER_CLEANER_BLOB_BATCHSIZE=2000
-TESTOPS_TASKEXECUTOR_COREPOOLSIZE=50
+TESTOPS_TASKEXECUTOR_COREPOOLSIZE=200
+TESTOPS_TASKEXECUTOR_MAXPOOLSIZE=200
+TESTOPS_TASKEXECUTOR_QUEUECAPACITY=1000
 
 ########################################################################################
-# LOGIN_PRIMARY defines default way to authenticate users 
+# LOGIN_PRIMARY defines default way to authenticate users
 # LOGIN_PRIMARY options [system|ldap|saml]
 ########################################################################################
 # SAML settings
@@ -275,7 +280,7 @@ LOGIN_SAML2_GROUPAUTHORITIES_ROLEADMINGROUPS=roleAdminGroups
 
 
 ########################################################################################
-# INACTIVE_USER_SESSION_EXPIRATION defined the period of time after that the user session 
+# INACTIVE_USER_SESSION_EXPIRATION defined the period of time after that the user session
 # will be invalidated and user will be asked to login again
 # for the value below (10d) if an end user logs in to the instance, then logs out and logs in again in 11 days
 # they will be asked to enter the credentials again
