@@ -74,7 +74,7 @@ Use this configuration if you are going to manage end users and their authentica
 
 ## Configuration validation
 
-GitHub Actions validates all `testops*/docker-compose.yml` files on pushes and pull requests using `docker compose config --quiet` and each configuration's `env-example`. This checks YAML syntax and the Compose model without pulling images or starting containers.
+GitHub Actions validates all `testops*/docker-compose.yml` files on pushes to `main` and pull requests using `docker compose config --quiet` and each configuration's `env-example`. This checks YAML syntax and the Compose model without pulling images or starting containers.
 
 To validate a configuration locally, run from the repository root:
 
