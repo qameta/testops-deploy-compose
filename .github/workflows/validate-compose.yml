@@ -1,0 +1,28 @@
+name: Validate Docker Compose
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-compose:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Validate Compose configurations
+        shell: bash
+        run: |
+          docker compose version
+          for config in testops*/docker-compose.yml; do
+            echo "Validating $config"
+            docker compose --env-file "${config%/*}/env-example" -f "$config" config --quiet
+          done

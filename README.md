@@ -72,6 +72,16 @@ Use this configuration if you are going to manage end users and their authentica
 | Redis       | preferably standalone server |
 | S3 solution | standalone server            |
 
+## Configuration validation
+
+GitHub Actions validates all `testops*/docker-compose.yml` files on pushes and pull requests using `docker compose config --quiet` and each configuration's `env-example`. This checks YAML syntax and the Compose model without pulling images or starting containers.
+
+To validate a configuration locally, run from the repository root:
+
+```sh
+docker compose --env-file testops/env-example -f testops/docker-compose.yml config --quiet
+```
+
 ## Upgrade from version 4 to version 5
 
 The only available paths from to upgrade 4 to 5 are
