@@ -179,7 +179,7 @@ services:
 
   minio-local-provisioning:
     restart: "no"
-    image: minio/mc:RELEASE.2022-10-12T18-12-50Z
+    image: bitnamilegacy/minio-client:2022.10.12
     container_name: minio-provisioning
     depends_on:
       - minio-local
