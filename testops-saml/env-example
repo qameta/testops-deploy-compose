@@ -5,7 +5,7 @@
 # Update this to install different release – check the release notes
 # Migration to version 5 from version 4 is possible from 4.26.5 to 5.5.1
 
-RELEASE_TO_DEPLOY=25.3.2
+RELEASE_TO_DEPLOY=26.3.1.2
 
 ########################################################################################
 # Registry Settings
